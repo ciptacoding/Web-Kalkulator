@@ -130,7 +130,7 @@ td {
 }
 
 th {
-    max-width: fit-content;
+    max-width: 100%;
     background-color: orange;
     color: white;
 }
