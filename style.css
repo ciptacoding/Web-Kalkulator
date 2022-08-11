@@ -103,30 +103,38 @@ body {
         padding: 10px;
         /*padding akan berubah dari 40px menjadi 10px*/
     }
-    .history{
+
+    .history {
         width: 100%;
     }
 }
-.history{
+
+.history {
     width: 80%;
     margin: 30px auto 0 auto;
     overflow: scroll;
 
 }
-table{
+
+table {
     border-collapse: collapse;
     border-spacing: 0;
     width: 100%;
     border: 1px solid #ddd
 }
-th,td{
+
+th,
+td {
     text-align: center;
     padding: 16px;
 }
-th{
+
+th {
+    max-width: fit-content;
     background-color: orange;
     color: white;
 }
-tr:nth-child(even){
+
+tr:nth-child(even) {
     background-color: #d2d2d2;
 }
