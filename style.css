@@ -1,0 +1,132 @@
+* {
+    /*styling pada seluruh dokumen html*/
+    box-sizing: border-box;
+    /*ukuran tiap elemen menjadi border box*/
+}
+
+body {
+    /*styling pada body*/
+    font-family: sans-serif;
+    /*menggunakan jenis font sans serif*/
+}
+
+.card {
+    /*stylingpadaclasscard*/
+    box-shadow: 0px 4px 8px 0px black;
+    /*bayanganbox*/
+    padding: 30px;
+    /*jarakelemenantaracolumndancard*/
+    margin-top: 20px;
+    /*jarakantarcarddengansisiatasbrowser*/
+    border-radius: 5px;
+}
+
+.column {
+    /*styling pada class column*/
+    display: flex;
+    /*tampilan menjadi flexisble*/
+    flex-direction: column;
+    /*mengubah arah tampilan menjadi column*/
+    max-width: 800px;
+    /*maksimal lebar atau max untuk lebih repsponsible*/
+    margin: 0 auto;
+    /*margin elemen 0 dan auto=posisi ditengah*/
+    text-align: right;
+    /*posisi text dikanan*/
+}
+
+.display {
+    /*styling pada */
+    width: 100%;
+    /*lebar clas display*/
+    background-color: #222;
+    /*warna latar*/
+    color: white;
+    /*warna huruf*/
+    border: 2px solid black;
+    /*ketebalan tipe warna*/
+    font-size: 2em;
+    /*ukuran huruf*/
+    padding: 20px;
+    /*padding didalam elemen display*/
+}
+
+.row {
+    /*styling pada class row*/
+    display: flex;
+    /*tampilan menjadi flexible*/
+}
+
+.button {
+    /*styling pada class button*/
+    border: 1px solid black;
+    /*ketebalan, tipe border, warna*/
+    padding: 40px;
+    /*padding di dalam elemen button*/
+    flex-basis: 25%;
+    /*pembaigan flex-item atau button sesuai parent*/
+    background-color: #d8d8d8;
+    /*warna latar button*/
+    text-align: center;
+    /*posisi huruf ditengah*/
+    cursor: pointer;
+    /*cursor berubah ketika di button*/
+    font-size: 1.5em;
+    /*ukuran font 1.5 dari normal*/
+}
+
+.double {
+    /*styling pada class double*/
+    flex-basis: 50%;
+    /*pembagian flex item sesuai parentnya*/
+}
+
+.operator,
+.equals,
+.negative {
+    /*styling pada class operator*/
+    background-color: orange;
+    /*warna latar pada class operator*/
+}
+
+.button:hover {
+    /*styling ketiga cursor berada di button*/
+    font-weight: bold;
+    /*huruf berubah menjadi tebal*/
+}
+
+@media screen and (max-width: 513px) {
+
+    /*responsible pada mobile ketika 513px kebawah*/
+    .button {
+        /*styling pada class button*/
+        padding: 10px;
+        /*padding akan berubah dari 40px menjadi 10px*/
+    }
+    .history{
+        width: 100%;
+    }
+}
+.history{
+    width: 80%;
+    margin: 30px auto 0 auto;
+    overflow: scroll;
+
+}
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd
+}
+th,td{
+    text-align: center;
+    padding: 16px;
+}
+th{
+    background-color: orange;
+    color: white;
+}
+tr:nth-child(even){
+    background-color: #d2d2d2;
+}
